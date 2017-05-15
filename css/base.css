@@ -1,0 +1,82 @@
+/*Base Styles*/
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+nav, footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+nav a:nth-child(n+2),
+.b-btn-group a:nth-child(n+3) {
+    padding-left: 1rem;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+main section:nth-child(even) {
+    border-left: 1px solid #000;
+}
+main section {
+    border-top: 1px solid #000;
+}
+
+section {
+    flex: 1 1 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: baseline;
+
+    padding: 0 1rem;
+}
+section:not(#b-t-leftalign) {
+        align-items: center;
+}
+
+
+/*Type*/
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+p:not(#b-type) {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+#b-type {
+    width: 90%;
+}
+
+/*Form*/
+hr {
+  border-top: 2px dotted rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
+}
+form {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+input,
+textarea {
+    width: 100%;
+}
+
+/*Layout Styles/*
+
+/*Navigation/*
+/*Typography/*
