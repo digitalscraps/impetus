@@ -1,6 +1,6 @@
 # start is a mood board-templatefor web design
 
-## clone this repo and start styling base styles such as:
+## clone this repo and start styling base design elements such as:
 
 * typography
 * buttons and links
