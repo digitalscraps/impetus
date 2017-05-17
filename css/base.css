@@ -10,7 +10,7 @@ body {
 nav, footer {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
     padding: 1rem;
 }
 nav a:nth-child(n+2),
@@ -42,6 +42,11 @@ section:not(#b-t-leftalign) {
         align-items: center;
 }
 
+/*Button and Links */
+.b-btn-group {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #000;
+}
 
 /*Type*/
 a {
@@ -58,6 +63,36 @@ p:not(#b-type) {
 #b-type {
     width: 90%;
 }
+/*Color*/
+.b-c{
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid #000;
+    margin-bottom: 1rem;
+}
+.b-c div:nth-child(1) {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.b-c div:nth-child(n+2) {
+    width: 50%;
+    height: 100px;
+    text-align: center;
+}
+.b-c div:nth-child(1),
+.b-c div:nth-child(n+2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b-c div:nth-child(n+2)+div {
+    border-left: 1px solid #000;
+}
+
+
 
 /*Form*/
 hr {
